@@ -1,15 +1,27 @@
-const rollButton = document.getElementById("btn");
+const rollP1 = document.getElementById("btnP1");
+const rollP2 = document.getElementById("btnP2");
+const holdP1 = document.getElementById("holdbtn1");
+const holdP1 = document.getElementById("holdbtn2");
 
-let score = 0;
-let start = true
+let scoreP1 = 0;
+let scoreP2 = 0;
+let playerOne = false
+let playerTwo = false
 
-rollButton.addEventListener("click", () => {
-    document.getElementById("demo1").style.color = "black";
+rollP1.addEventListener("click", () => {
+    playerOne = true
+    roll();
+})
+
+
+rollP2.addEventListener("click", () => {
+    playerTwo = true
     roll();
 })
 
 const roll = () => {
        let num = Math.floor(Math.random()*6);
+       if (playerOne = true || playerTwo = true) {
         if (num == 1) {
             gameOver()
             console.log("1")
@@ -38,16 +50,17 @@ const roll = () => {
             start = false;
             score = 0;
         }
+    }
 };
 
-const gameOver = () => {
+const reset = () => {
     document.getElementById("demo1").innerHTML = "You rolled a one. You lose.";
     document.getElementById("demo1").style.color = "red";
     document.getElementById("dice").src="./img/dice1.png";
     score = 0;
 }
 
-const winner = () => {3
-    document.getElementById("demo1").innerHTML = "You Win!";
-    document.getElementById("demo1").style.color = "green";
+const winner = () => {
+    // document.getElementById("demo1").innerHTML = "You Win!";
+    // document.getElementById("demo1").style.color = "green";
 }

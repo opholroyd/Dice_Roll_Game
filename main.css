@@ -3,6 +3,7 @@ body {
     background-color: #f7effe;
     font-family: 'Righteous', cursive;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -67,37 +68,35 @@ h1 {
 
 .main-container {
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background-color: #f5ebfd;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.right
-
 .rules {
+    color: black;
     display: flex;
     justify-items: center;
     margin: 10px;
     padding: 10px;
 }
 
+.txt {
+  color: #000000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1px;
+}
+
 .txt h2 {
+    color: black;
     margin: 10px;
     text-decoration-line: underline;
-}
-
-.rightSide {
-    /* opposite sides right is left, left is right */
-    width: 300px;
-    height: 1000px;
-    color: black;
-}
-
-.playBtn {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
 }
 
 #btn {
@@ -124,13 +123,6 @@ h1 {
     margin: 10px 20px 10px ;
 }
 
-.middle {
-    display: flex;
-    justify-content: center;
-    width: 1600px;
-    height: 1000px;
-}
-
 .die {
     margin: 20px;
     display: flex;
@@ -146,16 +138,8 @@ h1 {
     margin: 10px;
 }
 
-.leftSide {
-    /* opposite sides right is left, left is right */
-    width: 300px;
-    height: 1000px;
-    
-    
-}
-
 .score {
-    font-size: 50px;
+    font-size: 30px;
     color: black;
     margin: 10px;
 }
@@ -165,106 +149,43 @@ h1 {
     color: #fff
 }
 
-
-
 .social {
     width: 100%;
     height: 300px;
     box-shadow: 0px -2px 19px -4px rgba(0,0,0,0.73);
 }
 
+@media (max-width: 600px) {
+  .diceGameLogo { 
+    color: #fff;
+    display: flex;
+    background-color: #4e1c7a; 
+    width: 20px;
+    height: 20px;
+} 
 
+h1 {
+    margin: 0px;
+    font-size: 20px;
+    align-items: center;
+}
 
+.navText {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+} 
 
-
-
-
-
-/* .btn{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    background: #eaffd0;
+.logoText {
     margin: 10px;
-    border-radius: 50px;
-    box-shadow: 0 8px 25px -5px #00000040;
-    overflow: hidden;
-    position: relative;
+    margin-right: 20px;
+}
+  .txt {
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
   }
-  
-  .btn-fb {
-    color: #3B5998;
-  }
-  
-  .btn-tw {
-    color: #00aced;
-  }
-  
-  .btn-rd {
-    color: #ff4500;
-  }
-  
-  .btn-ig {
-    color: #231F20;
-  }
-  
-  .btn-yt {
-    color: #ED3833;
-  }
-  
-  .btn i{
-    line-height: 90px;
-    font-size: 36px;
-    transition: 0.2s linear;
-  }
-  .btn:hover i{
-    transform: scale(1.3);
-    color: #f1f1f1;
-  }
-  .btn::before{
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    transform: rotate(45deg);
-    left: -110%;
-    top: 90%;
-  }
-  
-  .btn-fb::before{
-    background: #3B5998;
-  }
-  
-  .btn-tw::before{
-    background: #00aced;
-  }
-  
-  .btn-rd::before{
-    background: #ff4500;
-  }
-  
-  .btn-ig::before{
-    background: #231F20;
-  }
-  
-  .btn-yt::before{
-    background: #ED3833;
-  }
-  
-  .btn:hover::before{
-    animation: aaa 0.7s 1;
-    top: -10%;
-    left: -10%;
-  }
-  @keyframes aaa {
-    0%{
-      left: -110%;
-      top: 90%;
-    }50%{
-      left: 10%;
-      top: -30%;
-    }100%{
-      top: -10%;
-      left: -10%;
-    }
-  } */
+
+
+}

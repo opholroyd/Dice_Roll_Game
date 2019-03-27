@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pacifico', cursive;
     color: #fff;
     box-sizing: border-box;
 }
@@ -37,20 +37,20 @@ h1 {
 }
 
 .logoText {
-    margin: 10px;
+    margin: 0;
     margin-right: 20px;
 }
 
 .diceLogo {
-    margin-left: 10px;
-    margin-right: 10px;
+    align-self: baseline;
+    margin: 8px;
 }
 
 .navLink {
     color: #fff;
     text-decoration: none;
-    margin: 10px;
-    padding: 18px 16px;
+    margin: 0px;
+    padding: 10px;
     margin: 0px;
     font-size: 1.5em;
 }
@@ -116,7 +116,7 @@ h1 {
 
 /* Modal Content/Box */
 .modal-content {
-    color: purple;
+    color: #4e1c7a;
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
@@ -159,7 +159,7 @@ h1 {
     text-align: center;
     margin: 0;
     border-radius: 10px;
-    background: purple;
+    background: #4e1c7a;
 }
 
 #points {

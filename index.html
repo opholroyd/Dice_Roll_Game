@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,53 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <title>Dice: The Single Player Adventure</title>
 </head>
+
 <body>
     <div class="navbar">
+        <a class="navLink" href="./index.html">Single Player</a>
         <div class="diceGameLogo">
-            <h1><a href="./index.html" class="logoText navText"><img class="diceLogo" src="./img/DiceGAME.png" alt="Logo" width="55" height="40">DICE</a></h1>
+            <h1><a href="./index.html" class="logoText navText"><img class="diceLogo" src="./img/DiceGAME.png"
+                        alt="Logo" width="55" height="40">DICE</a></h1>
         </div>
-            <a class="navLink" href="./index.html">Single Player</a>
-            <a class="navLink" href="./multiplayer.html">Multiplayer</a>
-            <a class="navLink" href="#">Feedback</a>
+        <a class="navLink" href="./multiplayer.html">Multiplayer</a>
     </div>
 
-    <div class="main-container">
-            <div class="txt">
-                    <h2>THE RULES</h2>
-                    <p>Roll the dice to begin the game.</p>
-                    <p>The dice appears on the first roll.</p>
-                    <p>Each time the dice is rolled the score adds up.</p>
-                    <p>If the score passes 20, you win.</p>
-                    <p>If you roll a 1 at any time, you lose and the game restarts.</p>
-                    <p>When you're ready click the button below.</p>
-            </div>
-            <div class="score">
-                <p>Score: <span id="demo1"></span></p>
-            </div>
-            <div class="rollBtn">
-                <button id="btn">ROLL DICE</button>
-            </div>
-                <div class="die">
-                    <img id="dice" src="./img/DiceGAME.png" width="480px" height="480px">
-                </div>
+    <div class="rulesCont">
+        <button id="rules" class="rules">THE RULES</button>
+    </div>
+
+    <!-- The Rules Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>THE RULES</h1>
+            <li>Roll the dice to begin the game.</li>
+            <li>The dice appears on the first roll.</li>
+            <li>Each time the dice is rolled the score adds up.</li>
+            <li>If one players score passes 20, you win.</li>
+            <li>If you roll a 1 at any time, you lose.</li>
+            <li>When you're ready click the roll button.</li>
         </div>
-        </div> 
-        
 
-    
+    </div>
 
-    <div class="social">
-        <div class="twitter">
-            <!-- </i>
-        </a>
-        <a class="btn btn-tw" href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a class="btn btn-rd" href="#">
-          <i class="fab fa-reddit"></i>
-        </a>
-        <a class="btn btn-ig" href="#">
-          <i class="fab fa-instagram"></i>
-        </div>
-        <div class="facebook"></div>
-        <div class="linkedin"></div>
-    </div> -->
+    <div class="scoreCont">
+        <p class="score">SCORE: <span id="points">0</span></p>
+    </div>
+    <p id="msg"></p>
 
+
+    <div class="die">
+        <img id="dice" src="./img/DiceGAME.png" alt="diceObject">
+    </div>
+
+    <div class="rollBtn">
+        <button id="btn">ROLL DICE</button>
+    </div>
 </body>
 <script src="./script.js"> </script>
+<script src="./modal.js"></script>
+
 </html>

@@ -68,7 +68,15 @@ h1 {
     border-bottom: 3px solid #ffffff;
 }
 
+<<<<<<< HEAD
 .rulesCont {
+=======
+.main-container {
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5ebfd;
+>>>>>>> 9b4020e83e194433bc148d2ae8f2507e5bb58aab
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +164,7 @@ h1 {
     font-size: 3em;
     color: #ffffff;
     padding: 10px;
+<<<<<<< HEAD
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -165,6 +174,21 @@ h1 {
 #points {
     width: auto;
     height: auto;
+=======
+    font-size: 15px;
+    line-height: 2px;
+}
+
+.txt {
+  color: #000000;
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1px;
+  font-size: 15px;
+>>>>>>> 9b4020e83e194433bc148d2ae8f2507e5bb58aab
 }
 
 .count {

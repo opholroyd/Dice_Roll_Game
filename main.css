@@ -202,6 +202,11 @@ h1 {
     margin: 10px 20px 10px;
 }
 
+.msgCont {
+    width: 100%;
+    height: 3em;
+}
+
 #msg {
     text-align: center;
     font-size: 3em;
